@@ -37,7 +37,7 @@ window.addEventListener("load", function() {
   function draw() {
     ctx.clearRect(0, 0, width, height);
     ctx.fillStyle = "rgba(255, 255, 255, 0.5)";
-    ctx.strokeStyle = "rgba(235, 230, 230, 0.56)";
+    ctx.strokeStyle = "rgba(235, 230, 230, 0.9)";
 
     // Draw lines between points
     for (let i = 0; i < points.length; i++) {
