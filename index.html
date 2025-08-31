@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI & Health Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Canvas for background animation -->
+  <canvas id="bgCanvas"></canvas>
+
+  <div class="calculator">
+    <h2>BMI & Health Calculator</h2>
+    <button id="themeToggleBtn">Toggle Theme</button>
+    <input type="number" id="weight" placeholder="Weight (kg)" min="1">
+    <input type="number" id="height" placeholder="Height (cm)" min="50">
+    <button id="calculateBtn">Calculate BMI</button>
+    <button id="clearHistoryBtn" style="margin-left:10px;">Clear History</button>
+
+    <div class="bmi-bar-container">
+      <div class="bmi-bar" id="bmiBar">
+        <div class="underweight" title="<18.5 Underweight"></div>
+        <div class="normal" title="18.5–24.9 Normal"></div>
+        <div class="overweight" title="25–29.9 Overweight"></div>
+        <div class="obese" title="≥30 Obese"></div>
+      </div>
+      <div class="bmi-marker" id="bmiMarker">0</div>
+    </div>
+
+    <div class="result" id="result"></div>
+
+    <div class="history">
+      <h3>BMI History</h3>
+      <ul id="historyList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="lines.js"></script>
+</body>
+</html>
