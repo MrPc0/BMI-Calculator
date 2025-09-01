@@ -12,6 +12,10 @@ body {
   color: #333;
 }
 
+.icon1{
+  border-radius: 999px;
+}
+
 /* Animation */
 @keyframes gradientBG {
   0% {background-position: 0% 50%;}
